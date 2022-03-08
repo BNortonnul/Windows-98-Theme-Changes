@@ -1,0 +1,95 @@
+/* NEW COMPONENT: OUTLINER */
+
+.workspace-leaf-content .view-content {
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:0px;
+	padding-right:0px;
+}
+
+.outline {
+  display: block;
+  background: #fff !important;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px var(--titlebar_inactive_1), inset -2px -2px var(--window), inset 2px 2px var(--border);
+  padding: 6px;
+  margin: 0;
+}
+
+.tree-item-icon.collapse-icon {
+  color: #fff;
+  line-height:11px;
+  /*display: none;*/
+}
+
+.tree-item-inner {
+  font-size: 11px;
+  margin-top: 3px;
+  line-height: 1em;
+  font-family: "Pixelated MS Sans Serif";
+
+}
+
+.tree-item-inner {
+  border-radius: 0px;
+  border: 0px solid transparent;
+  display: inline-block;
+  padding: 0px 0px;
+  color: #000;
+  position: relative;
+}
+/*
+.tree-item-children .tree-item .tree-item-self .tree-item-inner:before {
+  content: "";
+  display: block;
+  position: relative;
+  left: -16px;
+  top: 6px;
+  width: 12px;
+  border-bottom: 1px dotted var(--titlebar_inactive_1);
+}
+*/
+.tree-item-children .tree-item-children {
+  margin-left: 16px;
+  padding-left: 16px;
+  border-left: 1px dotted var(--titlebar_inactive_1);
+}
+
+/* Cover the bottom of the left dotted border */
+/*
+.tree-item-children .tree-item:last-child .tree-item-self .tree-item-inner::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: 7px;
+  bottom: 0px;
+  width: 8px;
+  background: #fff;
+}
+
+.tree-item-children .tree-item-self:before {
+  text-align: center;
+  display: block;
+  float: left;
+  content: "-";
+  border: 1px solid grey;
+  width: 8px;
+  height: 9px;
+  line-height: 8px;
+  margin-right: 5px;
+  padding-left: 1px;
+  background-color: #fff;
+}
+.nav-folder.mod-root>.nav-folder-title>.nav-folder-title-content {
+  font-weight: 700;
+}
+.is-collapsed .tree-item-self::before {
+  content: "+";
+}
+*/
+.tree-item-self.is-clickable:hover
+{
+	background-color:#fff !important;
+	text-decoration-line: underline;
+	text-decoration-color: #000;
+}
